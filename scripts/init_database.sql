@@ -10,9 +10,9 @@ warning:
 
 -- Drop and recreate the Datawarehouse database 
 if EXISTS  (select 1 from sys.databases where name= 'DataWarehouse'
-  Begin 
-      Alter Database Datawarehouse set single_user with rollback immediate;
-      Drop database DataWarehouse; 
+Begin 
+      -- Alter Database Datawarehouse set single_user with rollback immediate;
+      -- Drop database DataWarehouse; 
 End; 
 Go 
 -- Create the DataWarehouse Database 
